@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="${pageContext.request.requestURI}"/>
 	<link rel="stylesheet" href="../../css/style1.css" type="text/css">
 	<meta charset="ISO-8859-1">
 	<title>Nutzersuche</title>

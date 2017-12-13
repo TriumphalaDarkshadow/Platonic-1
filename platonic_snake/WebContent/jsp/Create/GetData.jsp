@@ -11,37 +11,39 @@
 <div class = "left">
 <br>
 </div>
-
 <main>
 	<div class = "ausrichtung">
 		<div class = "formularfeld">
-			<h1> Registrierung</h1>
-			<form action = "/platonic_snake/CreateServlet3">
+			<h2> Registrierung</h2>
+			<base href="${pageContext.request.requestURI}" />
+			<form action="/platonic_snake/UserCreationServlet" method = "post" enctype = "multipart/form-data">
 				<label for = "username">Username:*</label>
-				<INPUT TYPE=TEXT NAME=username SIZE=20 required><BR>
+				<input type=text name=username size=20 required><BR>
 				<br>
 				<label for = "email">Email:*</label>
-				<INPUT TYPE=TEXT NAME=email SIZE=20 required><BR>
+				<input type=text name=email SIZE=20 required><BR>
 				<br>
 				<label for = "password">Passwort:*</label>
-				<INPUT TYPE=password NAME = "password" id = "password" SIZE=20 required><BR>
+				<input type=text name = "password" id = "password" size=20 required><BR>
 				<br>
-				<label for = "cpassword">Passwort best‰tigen:*</label>
-				<INPUT TYPE=password NAME = "cpassword" id = "cpassword" SIZE=20 required><BR>
+				<label for = "cpassword">Passwort best√§tigen:*</label>
+				<input type=text name = "cpassword" id = "cpassword" size=20 required><BR>
 				<br>
 				<label for = "birthday">Geburtsdatum:</label>
-				<INPUT TYPE=DATE NAME=birthday><br>
+				<input type=date name=birthday><br>
 				<br>
 				<label for = "location">Wohnort:</label>
-				<INPUT TYPE=TEXT NAME=location SIZE=20><BR>
+				<input type=text name=location size=20><BR>
 				<br>
 				<label for = "interests">Interessen:</label>
-				<INPUT TYPE=TEXT NAME=interests SIZE=20><BR>
+				<input type=text name=interests size=20><BR>
 				<br>
+				<label for = "photo"> Foto: </label>
+				<input type = file name = photo id ="photo" size=60 accept=image/*><br>
 				<br>
 				<label for = "Absenden">* Pflichtfeld</label>
-				<INPUT TYPE=SUBMIT NAME=Absenden>
-			</FORM>
+				<input type=SUBMIT name=Absenden>
+			</form>
 		</div>
 	</div>
 </main>
@@ -67,6 +69,7 @@ cpassword.onkeyup = validatePassword;
 <br>
 </div>
 <%@ includefile="/jsp/Fragments/footer.jspf" %>
-</BODY>
-</HTML>
+</body>
+</html>
+
 

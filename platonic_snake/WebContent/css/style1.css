@@ -1,0 +1,242 @@
+@CHARSET "ISO-8859-1";
+
+
+/* ---------------------------------------------------VARIABLES */
+
+:root {
+	--main-color: #f88379;
+	--light-color: #F8F9F9;
+	--white-color: #ffffff;
+	--dark-color: #333333;
+}
+
+
+/* ------------------------------------------------------GENERAL */
+
+body {
+	background-color: var(--light-color);
+	overflow-x: hidden;
+	border: none !important;
+}
+
+h1 {
+	color: var(--main-color);
+	font-size: 2.5em;
+	font-weight: 200;
+}
+
+h2 {
+	color: var(--main-color);
+	font-size: 2.2em;
+	font-weight: 300;
+}
+
+h3 {
+	color: var(--main-color);
+	font-size: 1.9em;
+	font-weight: 300;
+}
+
+h4 {
+	color: var(--main-color);
+	font-size: 1.6em;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+	font-family: Helvetica, Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+p, label, table {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+table {
+	border-spacing: 10px;
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+a { 
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+a:link {
+	color: var(--main-color);
+}
+
+a:visited {
+	color: grey;
+}
+
+
+input {
+	float: right;
+}
+
+.left, .right {
+	float: left;
+	width: 20%;
+	background-color: var(--light-color);
+}
+
+main {
+	float: left;
+	width: 60%;
+}
+
+.ausrichtung {
+	justify-content: center;
+	display: flex;
+}
+
+.formularfeld {
+	background-color: var(--white-color);
+	border: solid var(--main-color) 1px;
+	border-radius: 10px;
+	width: 300px;
+	padding: 1px 30px 30px 30px;
+	margin-top: 30px;
+}
+
+.ausgabefeld {
+	background-color: var(--white-color);
+	border: solid var(--main-color) 1px;
+	border-radius: 10px;
+	width: 70%;
+	padding: 1px 30px 30px 30px;
+	margin-top: 30px;
+}
+
+
+/* ------------------------------------------------------FOOT-JSPF */	
+
+.footjspf {
+	background-color: var(--dark-color);
+	margin-top: 60px;
+	padding: 20px 0px;
+	outline: none;
+	float: left;
+	width: 100%;
+	margin-left: -20px;
+	padding-right: 40px;
+}
+
+.footjspf a {
+	color: var(--white-color);
+	text-decoration: none;
+	list-style: none;
+	font-size: 15px;
+}
+
+.footjspf ul {
+	list-style: none;
+}
+.footjspf a:hover {
+	color: grey;
+}
+
+
+/* ------------------------------------------------------HEAD-JSPF */
+
+.headjspf {
+	background-color: var(--white-color);
+	padding: 0px;
+	border-bottom: solid 20px var(--light-color);
+}
+
+
+#topicon {
+	width: 20%;
+	height: auto;
+	border: 14px solid var(--white-color);
+}
+
+.accmenu {
+	float: right;
+	padding: 20px;
+}
+
+.accmenu a {
+	color: black;
+	padding: 10px;
+	font-family: Times New Roman, serif;
+}
+
+.accmenu a:hover {
+	color: grey;
+}
+
+
+/* -------------------------------------------------------------MAINMENU */
+
+.mainmenu {
+    overflow: hidden;
+    background-color: var(--dark-color);
+    font-family: Arial;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+}
+
+.mainmenu a {
+    float: left;
+    font-size: 16px;
+    color: var(--white-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainmenu a:hover, .dropdown:hover {
+	background-color: var(--main-color);
+}
+
+.mainmenu a:active {
+	background-color: var(--main-color);
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--white-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--main-color);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

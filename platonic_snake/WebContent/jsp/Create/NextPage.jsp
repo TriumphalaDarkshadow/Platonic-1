@@ -3,12 +3,11 @@
 <jsp:setProperty name="user" property="*"/>
 <html>
 <head>
-	<base href="${pageContext.request.requestURI}" />
-	<meta charset="ISO-8859-1">
-	<link rel="stylesheet" href="../../css/style1.css" type="text/css">
-	<title>your data</title>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="../../css/style1.css" type="text/css">
+<title>your data</title>
+<base href="${pageContext.request.requestURI}" />
 </head>
-
 <body>
 <%@ includefile="/jsp/Fragments/header.jspf" %>
 
@@ -17,13 +16,13 @@
 </div>
 
 <main>
-
 	<div class = "ausrichtung">
 		<div class = "ausgabefeld">
 			<h1>Herzlich Willkommen ${user.username} !</h1>
 			
 			<p>Du hast folgende Daten angegeben:</p>
-			
+				
+			<emp>Bild:</emp><img src = "BildServlet?username=${user.username}">		
 			<table>
 				<tr>
 					<th>Name</th>
@@ -51,8 +50,8 @@
 				</tr>
 			</table>
 			<br>
-			<p>Du kannst deine Daten jederzeit im <a href="../Account/profile.jsp">Profil</a> ändern.</p>
-			<h4>Viel Spaß bei Platonic !</h4>
+			<p>Du kannst deine Daten jederzeit im Profil Ã¤ndern.</p>
+			<h4>Viel SpaÃŸ bei Platonic !</h4>
 		</div>
 	</div>
 </main>
@@ -64,5 +63,3 @@
 <%@ includefile="/jsp/Fragments/footer.jspf" %>
 </body>
 </html>
-
-

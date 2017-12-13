@@ -1,5 +1,6 @@
 package user;
 import java.io.Serializable;
+import javafx.scene.image.Image;
 import java.util.*;
 
 
@@ -11,22 +12,11 @@ public class UserData implements java.io.Serializable{
         private String birthday;
         private String location;
         private String interests;
-        private long int1;
         private long id;
+        private byte[] photo;
+        private String filename;
         
-        public UserData(){
-             }
-        
-        public UserData(long id, String username, String email, String password, String birthday, String location, String interests){
-            super();
-            this.id = id;
-            this.username = username;
-            this.email = email;
-            this.password = password;
-            this.birthday = birthday;
-            this.location = location;
-            this.interests = interests;
-        }
+      
     
         public void setUsername(String username){
             this.username = username;
@@ -54,6 +44,14 @@ public class UserData implements java.io.Serializable{
         
         public void setId(Long id) {
             this.id = id;            
+        }
+        
+        public void setPhoto (byte[] photo) {
+            this.photo = photo;
+        }
+        
+        public void setFilename(String filename) {
+            this.filename = filename;
         }
         
         
@@ -84,6 +82,15 @@ public class UserData implements java.io.Serializable{
         public Long getId() {
             return id;            
         }
+        
+        public byte[] getPhoto () {
+            return photo;
+        }
 
+        public String getFilename() {
+            return filename;
+        }
+     
+        
 
 }
